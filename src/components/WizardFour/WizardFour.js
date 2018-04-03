@@ -12,12 +12,14 @@ class WizardFour extends Component {
           <p>Have you already found your new home?</p> <br />
           <div className="row">
             <Link to="/wFive">
-              <button onClick={e => console.log(updateFound(e.target.value))}>
+              <button value={"Yes"} onClick={e => updateFound(e.target.value)}>
                 Yes
               </button>
             </Link>
             <Link to="/wFive">
-              <button onClick={e => updateFound(e.target.value)}>No </button>
+              <button value={"No"} onClick={e => updateFound(e.target.value)}>
+                No{" "}
+              </button>
             </Link>
           </div>
         </div>
